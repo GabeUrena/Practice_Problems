@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigDecimal;
 public class practice_july_20_2023 {
 	public static void main (String[]args) {
 		Scanner input = new Scanner(System.in);
@@ -61,5 +62,51 @@ public class practice_july_20_2023 {
 		System.out.println(Math.PI*(radius*radius));
 
 		
+//****************************************************************************************************************************
+		
+		//https://www.w3resource.com/java-exercises/basic/index1.php
+		
+		//151 
+		System.out.println("\n************************* Problem 151 *************************");
+		double temp = 0;
+		System.out.println("(101 + 0) / 3 -> " + (101 + 0) / 3                								+"\r\n"
+						+  "(3.0e-6 * 10000000.1) -> " + 3.0e-6 * 10000000.1  								+"\r\n"
+						+  "(true && true) -> " + (true && true)			  								+"\r\n"
+						+  "(false && true) -> " + (false && true)			  								+"\r\n"
+						+  "(false && false) || (true && true) -> " + ((false && false) || (true && true))	+"\r\n"
+						+  "(false || false) && (true && true) -> " + ((false || false) && (true && true))	+"\r\n");
+		
+		//152
+		System.out.println("\n************************* Problem 152 *************************");
+		System.out.print("Input first number: ");
+		int firstNum = input.nextInt();
+		System.out.print("Input second number: ");
+		int secondNum = input.nextInt();
+		System.out.print("Input third number: ");
+		int thirdNum = input.nextInt();
+		System.out.print("Input fourth number: ");
+		int fourthNum = input.nextInt();
+		
+		if(firstNum == secondNum && firstNum == thirdNum && firstNum == fourthNum) {
+			System.out.println("Numbers are equal!");
+		} else {
+			System.out.println("Numbers are not equal!");
+		}
+		
+		//153
+		System.out.print("\nInput first number: ");
+		double firstDouble = input.nextDouble();
+		System.out.print("Input second number: ");
+		double secondDouble = input.nextDouble();
+		
+		if((firstDouble <= 1 && firstDouble >= 0) && (secondDouble <= 1 && secondDouble >= 0)) {
+			System.out.println(true);
+		} else {
+			System.out.println(false);
+		}
+		
+		
+		
+		//THIS CODE IS WRITTEN BY GABRIEL URENA  @GabeUrena ON GITHUB
 	}
 }
